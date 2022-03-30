@@ -6,7 +6,7 @@ package poo22_tp1_ej12;
 
 /**
  *
- * @author profeblas
+ * @author blaslopez@gmail.com
  */
 public class POO22_TP1_EJ12 {
 
