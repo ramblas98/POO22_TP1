@@ -7,7 +7,7 @@ package tp1_ej12;
 
 /**
  *
- * @author alumno
+ * @author LEO
  */
 public class TP1_EJ12 {
 
