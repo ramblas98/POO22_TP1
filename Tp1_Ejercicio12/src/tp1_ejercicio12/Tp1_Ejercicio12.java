@@ -3,7 +3,7 @@ package tp1_ejercicio12;
 import java.util.Scanner;
 /* */
 public class Tp1_Ejercicio12 {
-    static void ejercicio1(){
+    static void ejercicio3(){
         int p;
         Scanner y = new Scanner(System.in);
         int b = y.nextInt();
@@ -14,14 +14,13 @@ public class Tp1_Ejercicio12 {
     }
     /*     */
     public static void main(String[] args) {
-        
-        System.out.println("Elija los ejercicio: ");
-        //System.out.println();
         Scanner y = new Scanner(System.in);
+        System.out.println("TPN1 - Ejercicio 12-i");
+        System.out.println("Elegir un Ejercicio del 1-15: ");
         int op= y.nextInt();
         
         switch (op){
-            case 1: ejercicio1();
+            case 3: ejercicio3();
                     break;
         }
         
