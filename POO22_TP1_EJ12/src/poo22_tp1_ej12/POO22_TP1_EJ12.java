@@ -16,28 +16,22 @@ public class POO22_TP1_EJ12 {
         int i,j,n; 
         String aux, v[];
         
+        System.out.println("Cantidad de palabras a ordenar: ");
         n = teclado.nextInt();
         v = new String[n];
         
         for(i=0;i<n;i++){
+          System.out.print("Una palabra: ");
           v[i] = teclado.next();
         }
         for(i=0;i<n-1;i++)
           for(j=i+1;j<n;j++)
             if (v[i].compareTo(v[j])>0){
-              // v[i] > v[j]-- datos primitivos
-              //
-              /*
-              String cad1, cad2;
-              if ( cad1.equals(cad2)!=true )
-              if ( cad1.compareTo(cad2)==0 ) son iguales?
-              if ( cad1.compareTo(cad2)>0 )  cad1 > cad2
-              if ( cad1.compareTo(cad2)<0 )  cad1 < cad2
-              */
               aux = v[i];
               v[i] = v[j];
               v[j] = aux;
             }
+        System.out.println("Lista ordenada:");
         for(i=0;i<n;i++){
           System.out.println(v[i]); 
         }
@@ -49,15 +43,19 @@ public class POO22_TP1_EJ12 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Desafio de 15 ejercicios");
-        System.out.print("Escriba del 1 al 15 para seleccionar el problema: ");
-        int opc = teclado.nextInt();
-        switch(opc){
-            case 1:
-                ejercicio1();
-                break;
+        int opc ;
+        do{
+            System.out.println("Desafio de 15 ejercicios");
+            System.out.print("Escriba del 1 al 15, 0 para SALIR: ");
+            opc = teclado.nextInt();
+            switch(opc){
+                case 1:
+                    ejercicio1();
+                    break;
                 
-        }
+            }
+        }while(opc!=0);
+        
     }
     
 }
