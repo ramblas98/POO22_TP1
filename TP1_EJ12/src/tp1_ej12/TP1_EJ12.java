@@ -144,25 +144,23 @@ static void Area_Triang (){
   
 }
 
-  
-
-
-
-  
-
-  
-
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println("Ingresar numeros del 1 al 15");
+        Scanner teclado = new Scanner(System.in);
+       int opc;
+        do{     
         // TODO code application logic here
-    Scanner teclado = new Scanner(System.in);
+        opc = teclado.nextInt();
        System.out.println("Desafio 15 ejercicios");
        System.out.println("Ingresar numeros del 1 al 15");
-       int opc= teclado.nextInt();
+      
+      
        switch (opc){
-        
+           case 0: System.out.println("SALIR");
+              break;
      //    case 1: ejercicio1();
             //    break;
         
@@ -204,12 +202,8 @@ static void Area_Triang (){
            case 15:Area_Triang();
                break;
        }
-    }
     
-} 
-        
-
+     } while ( opc!=0);
     
-    
-
-
+     }
+}
