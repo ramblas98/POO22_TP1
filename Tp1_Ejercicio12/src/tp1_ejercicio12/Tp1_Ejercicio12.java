@@ -1,22 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/* */
 package tp1_ejercicio12;
-
-/**
- *
- * @author matiaspebls91@gmail.com
- */
+import java.util.Scanner;
+/* */
 public class Tp1_Ejercicio12 {
-
-    /**
-     * @param args the command line arguments
-     */
+    static void ejercicio1(){
+        int p;
+        Scanner y = new Scanner(System.in);
+        int b = y.nextInt();
+        int a = y.nextInt();
+  
+        p = 2*(b+a);
+        System.out.println(p);
+    }
+    /*     */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Hola");
+        
+        System.out.println("Elija los ejercicio: ");
+        //System.out.println();
+        Scanner y = new Scanner(System.in);
+        int op= y.nextInt();
+        
+        switch (op){
+            case 1: ejercicio1();
+                    break;
+        }
+        
     }
     
 }
