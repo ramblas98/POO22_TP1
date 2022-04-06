@@ -58,42 +58,42 @@ public class POO22_TP1_EJ15 {
     }
     
     private static boolean buscarNorte(String p,int f, int c){
-        //... 
+        //... MATIAS
         return false;
     }
     
     private static boolean buscarSur(String p,int f, int c){
-        //...
+        //... LEO
         return false;
     }
     
     private static boolean buscarEste(String p,int f, int c){
-        //...
+        //... MATIAS
         return false;
     }
     
     private static boolean buscarOeste(String p,int f, int c){
-        //...
+        //... LEO
         return false;
     }
     
     private static boolean buscarNO(String p,int f, int c){
-        //...
+        //... MATIAS
         return false;
     }
     
     private static boolean buscarNE(String p,int f, int c){
-        //...
+        //... LEO
         return false;
     }
     
     private static boolean buscarSO(String p,int f, int c){
-        //...
+        //... MATIAS
         return false;
     }
     
     private static boolean buscarSE(String p,int f, int c){
-        //...
+        //... LEO
         return false;
     }
     
