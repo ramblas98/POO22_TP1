@@ -143,6 +143,37 @@ static void Area_Triang (){
      
   
 }
+static void Sumar_par_impar(){
+ 
+   
+      int n=0;
+      int[] v = new int[100];
+      int i;
+      
+      
+       System.out.println("ingresar la cantidad de elementos del vector");
+       Scanner teclado = new Scanner(System.in);
+       int l=teclado.nextInt();
+       for (i=0;i<l;i++){
+           System.out.println("ingresar el valor de " + i);
+       v[i]=teclado.nextInt();
+       
+           
+       }
+       int si=0;
+       int sp=0;
+      for(int i=0;i<l;i++){
+        if(v[i] % 2==0)
+         sp+=v[i];
+            else
+            si+=v[i];
+        
+      }
+  System.out.println("suma de impares es" + si);
+  System.out.println("suma de pares es: " + sp);
+  
+
+}
 
     /**
      * @param args the command line arguments
@@ -187,8 +218,8 @@ static void Area_Triang (){
            case 9: Sumar_Digito1();
            break;
            
-         //  case 10: ()
-            //break
+           case 10: Sumar_par_impar();
+            break;
            
            case 11: convertir_anio_en_dias();
             break;
