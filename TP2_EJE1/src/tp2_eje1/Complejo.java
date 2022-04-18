@@ -64,5 +64,32 @@ Complejo c;
      return (c);
      }
       //metodos de clases
-     public 
+     public Complejo suma(Complejo a, Complejo b){
+      Complejo c= new Complejo();
+      c.setRe(a.getRe()+b.getRe());
+      c.setIm(a.getIm()+b.getIm());
+        
+     return (c);   
+     }
+     public Complejo resta(Complejo a, Complejo b){
+      Complejo c= new Complejo();
+      c.setRe(a.getRe()-b.getRe());
+      c.setIm(a.getIm()-b.getIm());
+         
+         return c;
+     }
+     public Complejo producto(Complejo a, Complejo b){
+     Complejo c= new Complejo();
+     c.setRe(a.getRe()*b.getRe()+a.getRe()+b.getIm());
+     c.setIm( (a.getIm() * b.getIm()*(-1))+ (a.getIm()*(b.getRe()))   );
+     
+    // (a + bi) · (c + di) = (ac − bd) + (ad + bc)i
+    return c;
+     }
+     public Complejo division(Complejo a, Complejo b){
+      Complejo c= new Complejo();
+      
+     
+     
+     }
 }
