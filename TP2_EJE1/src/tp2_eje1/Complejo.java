@@ -64,5 +64,5 @@ Complejo c;
      return (c);
      }
       //metodos de clases
-     
+     public 
 }
