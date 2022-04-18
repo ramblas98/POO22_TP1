@@ -89,7 +89,9 @@ Complejo c;
      public Complejo division(Complejo a, Complejo b){
       Complejo c= new Complejo();
       
-     
+     c.setRe((a.getRe()*b.getRe()+a.getIm()*b.getIm())/Math.pow(b.getRe(), 2) + Math.pow(b.getIm(), 2));
+     c.setIm((a.getIm()*b.getRe()- (a.getRe()*b.getIm()))/Math.pow(b.getRe(), 2) + Math.pow(b.getIm(), 2));
+     return c;
      
      }
 }
