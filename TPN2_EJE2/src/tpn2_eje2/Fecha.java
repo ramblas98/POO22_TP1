@@ -56,7 +56,7 @@ public class Fecha {
     this.anio=a;
         
     public void adelantar(int d){
-     this.dia.
+    
     
     }
     public boolean valida(){}
